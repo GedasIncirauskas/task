@@ -12,6 +12,10 @@ header {
     justify-content: space-between;
     align-items: center;
     max-width: 70%;
+
+    .isOpen {
+      display: block;
+    }
   }
 
   img {
@@ -43,6 +47,10 @@ header {
 
     .left_navigation {
       display: block;
+
+      .isClose {
+        display: none;
+      }
 
       a {
         display: block;

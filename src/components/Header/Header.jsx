@@ -15,7 +15,7 @@ const Header = () => {
     <header>
       <div className="left_navigation">
         <img src={logo} alt="coingate" />
-        <div style={{ display: open ? 'block' : 'none' }}>
+        <div className={open ? 'isOpen' : 'isClose'}>
           <a href={url}>Products</a>
           <a href={url}>Resources</a>
           <a href={url}>Buy Instantly</a>
