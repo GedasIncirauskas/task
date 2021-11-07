@@ -1,0 +1,23 @@
+button {
+  border-radius: 4px 50px 50px 20px;
+  color: var(--white);
+  border: none;
+  padding: 0px 45px 0px 35px;
+  font-family: var(--fontStyle);
+  font-size: 18px;
+  line-height: 50px;
+
+  i {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
+  &.success {
+    background-color: var(--green);
+  }
+  &.default {
+    background-color: var(--grey);
+    color: var(--white);
+    cursor: not-allowed;
+  }
+}

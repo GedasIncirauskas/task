@@ -1,0 +1,30 @@
+main {
+  .content {
+    background-image: url('./assets/Rectangle.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -120% 0%;
+    width: 100%;
+    height: 100vh;
+
+    .content_wrapper {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      max-width: 1264px;
+    }
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  main {
+    .content {
+      background-position: 100% 0%;
+      height: 130vh;
+
+      .content_wrapper {
+        display: block;
+      }
+    }
+  }
+}
