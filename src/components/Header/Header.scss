@@ -38,10 +38,19 @@ header {
 
 @media only screen and (max-width: 568px) {
   header {
-    height: 70px;
-    .left_navigation a {
-      display: none;
+    height: auto;
+    display: block;
+
+    .left_navigation {
+      display: block;
+
+      a {
+        display: block;
+        margin: 5px 0 5px 25px;
+        font-size: 15px;
+      }
     }
+
     .right_navigation {
       a,
       Button {
@@ -50,8 +59,12 @@ header {
 
       i {
         display: flex;
+        position: absolute;
+        top: 15px;
+        right: 30px;
       }
     }
+
     img {
       width: 107px;
       margin: 15px 45px 13px 20px;

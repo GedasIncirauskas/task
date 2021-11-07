@@ -15,9 +15,11 @@ const Header = () => {
     <header>
       <div className="left_navigation">
         <img src={logo} alt="coingate" />
-        <a href={url}>Products</a>
-        <a href={url}>Resources</a>
-        <a href={url}>Buy Instantly</a>
+        <div style={{ display: open ? 'block' : 'none' }}>
+          <a href={url}>Products</a>
+          <a href={url}>Resources</a>
+          <a href={url}>Buy Instantly</a>
+        </div>
       </div>
       <div className="right_navigation">
         <i className="fas fa-bars" onClick={() => openBar(open)}></i>
