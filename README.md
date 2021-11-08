@@ -30,7 +30,7 @@ You are done! Now you can start editing the React project in the new folder that
 
 ## Contact
 
-Gedas Inčirauskas- [My portfolio](https://gjob.com) - gedas.inc@gmail.com
+Gedas Inčirauskas- [My portfolio](https://gjob.lt) - gedas.inc@gmail.com
 
 Project Link: [https://github.com/GedasIncirauskas/task](https://github.com/GedasIncirauskas/task)
 
