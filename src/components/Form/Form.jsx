@@ -12,7 +12,7 @@ const Form = () => {
   const [curr, setCurr] = useState('EUR');
 
   let newDataPay = Object.keys(data.merchant);
-  let newDataBuy = Object.keys(data.trader.buy);
+  let newDataBuy = Object.keys(data.trader.sell);
   let payToNumber = parseFloat(pay);
   let buyToNumber = parseFloat(buy);
 
@@ -21,8 +21,8 @@ const Form = () => {
     const upperCaseForCrypto = cryptIcon.toUpperCase();
     const inputValue = parseFloat(data.merchant[titleOfCurren].EUR);
     const valueIntoEur = parseFloat(value) * inputValue;
-    const getEurValue = parseFloat(data.trader.buy[upperCaseForCrypto].EUR);
-    const result = (valueIntoEur / getEurValue).toFixed(5);
+    const getEurValue = parseFloat(data.trader.sell[upperCaseForCrypto].EUR);
+    const result = (valueIntoEur / getEurValue).toFixed(6);
     setPay(value);
     setBuy(result);
   };
@@ -38,9 +38,20 @@ const Form = () => {
     setCryptIcon(crypto);
   };
 
+  const calculationBuy = () => {
+    const cryptoTitle = cryptIcon.toUpperCase();
+    const cryptoValue = parseFloat(data.trader.sell[cryptoTitle].EUR);
+    const resultofCrypto = parseFloat(buy) * cryptoValue;
+    setBuy(resultofCrypto);
+  };
+
   useEffect(() => {
     calculation(pay);
   }, [curr]);
+
+  useEffect(() => {
+    calculationBuy(buy);
+  }, [cryptIcon]);
 
   return (
     <div className="form_wrapper">
@@ -60,7 +71,6 @@ const Form = () => {
           getCurrency={getCurrency}
           data={newDataPay}
         />
-
         <InputBuy
           buy={buyToNumber}
           setBuy={setBuy}
