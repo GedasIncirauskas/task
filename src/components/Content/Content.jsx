@@ -7,8 +7,7 @@ const Content = () => {
   return (
     <div className="content_block">
       <h1>
-        <span>Buy Bitcoin,</span> Ethereum, Litecoin and other crypto{' '}
-        <span>online</span>
+        <span>Buy Bitcoin,</span> Ethereum, Litecoin and other crypto <span>online</span>
       </h1>
       <p>{description}</p>
       <a href={url}>

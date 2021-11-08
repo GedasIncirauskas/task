@@ -1,5 +1,18 @@
 .form_wrapper {
+  position: relative;
+  .form-shadow {
+    position: absolute;
+    width: 80%;
+    height: 420px;
+    background: var(--white);
+    top: 70px;
+    left: -25px;
+    border-radius: 20px;
+    transform: rotate(-5.53deg);
+  }
+
   form {
+    position: relative;
     background: var(--white);
     border: 1px solid #e8e8e8;
     box-sizing: border-box;
@@ -7,58 +20,6 @@
     padding: 30px;
     width: 80%;
     margin: 100px 0 0 20px;
-
-    .input_block {
-      padding: 15px 0 15px 15px;
-      border: 1px solid #d9d9d9;
-      border-radius: 20px;
-      margin-bottom: 25px;
-
-      &:nth-child(1)::before {
-        content: 'Pay';
-        color: var(--black);
-      }
-
-      &:nth-child(2)::before {
-        content: 'Buy';
-        color: var(--black);
-      }
-
-      input {
-        width: calc(50% - 10px);
-        text-align: center;
-        border: none;
-        border-right: 1px solid #d9d9d9;
-
-        &:focus {
-          outline: none;
-        }
-      }
-      select {
-        border: none;
-        color: var(--black);
-        vertical-align: middle;
-
-        &#transfer {
-          margin-left: 20px;
-          padding-right: 60px;
-        }
-
-        &#buy {
-          width: 65px;
-        }
-      }
-
-      img {
-        width: 25px;
-        vertical-align: middle;
-        margin: 0 5px;
-      }
-
-      p {
-        font-family: var(--fontStyle);
-      }
-    }
 
     Button {
       width: 100%;
@@ -71,6 +32,10 @@
 }
 
 @media only screen and (max-width: 568px) {
+  .form-shadow {
+    display: none;
+  }
+
   .form_wrapper {
     form {
       margin: 15px auto;

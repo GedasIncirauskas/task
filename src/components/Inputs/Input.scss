@@ -1,0 +1,51 @@
+.input_block {
+  padding: 15px 0 15px 15px;
+  border: 1px solid #d9d9d9;
+  border-radius: 20px;
+  margin-bottom: 25px;
+
+  &:nth-child(1)::before {
+    content: 'Pay';
+    color: var(--black);
+  }
+
+  &:nth-child(2)::before {
+    content: 'Buy';
+    color: var(--black);
+  }
+
+  input {
+    width: calc(50% - 10px);
+    text-align: center;
+    border: none;
+    border-right: 1px solid #d9d9d9;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  select {
+    border: none;
+    color: var(--black);
+    vertical-align: middle;
+
+    &#transfer {
+      margin-left: 20px;
+      padding-right: 60px;
+    }
+
+    &#buy {
+      width: 65px;
+    }
+  }
+
+  img {
+    width: 25px;
+    vertical-align: middle;
+    margin: 0 5px;
+  }
+
+  p {
+    font-family: var(--fontStyle);
+  }
+}

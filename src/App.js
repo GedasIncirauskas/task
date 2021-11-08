@@ -1,8 +1,8 @@
-import React from "react";
-import { Header, Content, Form } from "../src/components/index";
-import "./variable.scss";
+import React from 'react';
+import { Header, Content, Form } from '../src/components/index';
+import './variable.scss';
 
-import "./App.scss";
+import './App.scss';
 
 function App() {
   return (
