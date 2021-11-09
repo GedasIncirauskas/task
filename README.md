@@ -2,7 +2,7 @@
 
 Buy Bitcoin, Ethereum, Litecoin and other crypto online.
 
-DEMO - [CoinGate App](https://coingate.gjob.lt)
+DEMO - [CoinGate App](http://coingate.gjob.lt)
 
 ## Built With
 
