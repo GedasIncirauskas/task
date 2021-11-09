@@ -1,5 +1,4 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
 import './Input.scss';
 
@@ -16,7 +15,7 @@ const InputBuy = ({ buy, setBuy, cryptIcon, getCrypto, data }) => {
     <div className="input_block">
       <input type="number" value={buy || ''} onChange={(e) => setBuy(e.target.value)} min={0} />
       <img src={getIcon()} alt={cryptIcon} />
-      <select name="buy" id="buy" onChange={(e) => getCrypto(e.target.value)}>
+      <select id="buy" onChange={(e) => getCrypto(e.target.value)}>
         {data.map((item, index) => (
           <option key={item || index}>{item}</option>
         ))}

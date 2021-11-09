@@ -21,7 +21,7 @@ const InputPay = ({ pay, calculation, icon, curr, getCurrency, data }) => {
         onChange={(e) => calculation(e.target.value)}
       />
       <img src={getIcon()} alt={icon} />
-      <select value={curr} onChange={(e) => getCurrency(e.target.value)}>
+      <select id="pay" value={curr} onChange={(e) => getCurrency(e.target.value)}>
         {data.map((item, index) => (
           <option key={item || index} value={item}>
             {item}

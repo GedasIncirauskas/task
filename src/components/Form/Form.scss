@@ -39,29 +39,12 @@
   .form_wrapper {
     form {
       margin: 15px auto;
-      .input_block {
-        padding: 10px 0 10px 10px;
 
-        input {
-          width: 40%;
-        }
-
-        select {
-          font-size: 15px;
-
-          &#transfer {
-            margin-left: 10px;
-            padding-right: 45px;
-          }
-        }
-        img {
-          width: 15px;
-        }
-      }
       Button {
         margin-top: 0px;
       }
     }
+
     .mobile-only {
       display: block;
       width: 80%;
