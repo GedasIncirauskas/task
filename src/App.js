@@ -1,10 +1,9 @@
 import React from 'react';
 import { Header, Content, Form } from '../src/components/index';
 import './variable.scss';
-
 import './App.scss';
 
-function App() {
+const App = () => {
   return (
     <div>
       <Header />
@@ -18,6 +17,6 @@ function App() {
       </main>
     </div>
   );
-}
+};
 
 export default App;

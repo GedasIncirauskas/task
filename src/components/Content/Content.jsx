@@ -4,6 +4,7 @@ import './Content.scss';
 
 const Content = () => {
   const url = '#';
+
   return (
     <div className="content_block">
       <h1>
