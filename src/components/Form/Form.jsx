@@ -85,7 +85,7 @@ const Form = () => {
         <Button
           type="submit"
           color={buyToNumber > 0 ? 'success' : 'default'}
-          click="page"
+          click="/"
           data={buyToNumber}
         >
           {`Buy ${cryptIcon.toUpperCase()}`}
